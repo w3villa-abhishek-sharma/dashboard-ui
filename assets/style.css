@@ -8,6 +8,7 @@ Variables
     --main-bg-color: #002a7a;
     --main-bg-shadow: #193f87;
     --primary-text: #fff;
+    --grey: grey;
 }
 
 
@@ -20,9 +21,22 @@ Universal Class
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-color: #f5f6fa;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 
@@ -87,6 +101,7 @@ Side Navigation
 
 .navigation-links a.active {
     background-color: var(--main-bg-shadow);
+    border-radius: 13px;
 }
 
 .profile-img {
@@ -109,7 +124,7 @@ Side Navigation
 Right Container
 +++++++++++++++++++++++++++
 */
-.right-container{
+.right-container {
     display: grid;
     grid-template-columns: 75% 25%;
 }
@@ -120,7 +135,161 @@ Right Container
 Right Content
 +++++++++++++++++++++++++++
 */
-.right-content{
+.right-content {
     background-color: var(--primary-text);
     border-radius: var(--radius);
+    padding: 30px;
+}
+
+.right-container .header .heading {
+    font-size: 1.6rem;
+}
+
+.right-container .header p {
+    color: var(--grey);
+    font-size: .9rem;
+    margin-top: 6px;
+}
+
+
+/* 
++++++++++++++++++++++++++++
+My Cards
++++++++++++++++++++++++++++
+*/
+.my-card {
+    margin-top: 40px;
+}
+
+.my-card .cards {
+    display: flex;
+    margin-top: 20px;
+}
+
+.my-card .cards .card {
+    width: 100%;
+    background-color: #267dff;
+    color: var(--primary-text);
+    padding: 15px;
+    border-radius: 13px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my-card .cards .card .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.my-card .cards .card .card-bottom .card-type {
+    z-index: 2;
+}
+
+.my-card .cards .card .card-bottom .circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-bg-color);
+    border-radius: 50%;
+    right: -10px;
+    bottom: -10px;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.my-card .cards .my-balance {
+    margin-left: 10px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 13px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my-card .cards .my-balance span {
+    font-size: 1.8rem;
+}
+
+/* 
++++++++++++++++++++++++++++
+Recent Transaction
++++++++++++++++++++++++++++
+*/
+.recent-transaction {
+    margin-top: 40px;
+}
+
+.recent-transaction .cards {
+    height: 300px;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+.recent-transaction .cards .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.recent-transaction .cards .left .img {
+    background-color: #c3dafd;
+    color: var(--main-bg-shadow);
+    height: 50px;
+    width: 50px;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-transaction .cards .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.recent-transaction .cards .card .data {
+    margin-left: 10px;
+}
+
+.recent-transaction .cards .card .data p {
+    font-size: .9rem;
+    color: var(--grey);
+}
+
+.recent-transaction .cards .right-data {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.recent-transaction .cards .right-data.positive {
+    color: green;
+}
+
+.recent-transaction .cards .right-data.negative {
+    color: red;
+}
+
+/* 
++++++++++++++++++++++++++++
+Find Us
++++++++++++++++++++++++++++
+*/
+.find-us{
+    margin-top: 40px;
+}
+.find-us .heading{
+    
+}
+.find-us .gmap_canvas{
+    margin-top: 20px;
+    border-radius: 15px;
 }
