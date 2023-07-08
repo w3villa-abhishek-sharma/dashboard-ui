@@ -283,10 +283,11 @@ Recent Transaction
 Find Us
 +++++++++++++++++++++++++++
 */
-.find-us{
+.find-us {
     margin-top: 40px;
 }
-.find-us .gmap_canvas{
+
+.find-us .gmap_canvas {
     margin-top: 20px;
     border-radius: 15px;
 }
@@ -296,7 +297,7 @@ Find Us
 Main Content 
 +++++++++++++++++++++++++++
 */
-.main-content{
+.main-content {
     padding: 30px;
 }
 
@@ -306,15 +307,17 @@ Main Content
 Main Content Top
 +++++++++++++++++++++++++++
 */
-.main-content .top{
+.main-content .top {
     display: flex;
     justify-content: space-between;
 }
-.main-content .top{
+
+.main-content .top {
     display: flex;
     justify-content: space-between;
 }
-.main-content .top .searching{
+
+.main-content .top .searching {
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -324,15 +327,18 @@ Main Content Top
     border-radius: 15px;
     padding: 0 20px;
 }
-.main-content .top .searching .icon{
+
+.main-content .top .searching .icon {
     color: var(--grey);
 }
-.main-content .top .searching input{
+
+.main-content .top .searching input {
     outline: unset;
     border: unset;
     width: calc(100% - 120px);
 }
-.main-content .top .searching button{
+
+.main-content .top .searching button {
     background-color: transparent;
     border: unset;
     color: var(--main-bg-shadow);
@@ -342,15 +348,55 @@ Main Content Top
     background-color: #d2e0fa;
     cursor: pointer;
 }
-.main-content .top .searching button:hover{
+
+.main-content .top .searching button:hover {
     color: #d2e0fa;
     background-color: var(--main-bg-color);
 }
-.main-content .top .notification{
+
+.main-content .top .notification {
     background-color: var(--primary-text);
     color: var(--grey);
     padding: 15px;
     font-size: 1.4rem;
     cursor: pointer;
     border-radius: 15px;
+}
+
+/* 
++++++++++++++++++++++++++++
+Send Money Cards
++++++++++++++++++++++++++++
+*/
+.send-money {
+    margin-top: 40px;
+}
+
+.send-money .cards {
+    display: flex;
+    margin-top: 20px;
+}
+
+.send-money .cards .left-card {
+    background-color: var(--primary-text);
+    width: 60%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.send-money .cards .right-card {
+    position: relative;
+    background-color: var(--main-bg-color);
+    width: 38%;
+    margin-left: 20px;
+    height: 200px;
+    border-radius: 15px;
+}
+.send-money .cards .right-card .circle{
+    position: absolute;
+    background-color: var(--main-bg-shadow);
+    width: 100px;
+    height: 100px;
+    right: 0;
+    border-radius: 50%;
 }
