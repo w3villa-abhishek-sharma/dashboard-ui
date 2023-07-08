@@ -380,8 +380,48 @@ Send Money Cards
 .send-money .cards .left-card {
     background-color: var(--primary-text);
     width: 60%;
-    height: 200px;
     border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    padding-right: 40px;
+}
+
+.send-money .cards .left-card .card-number {
+    border: 1px solid rgb(213, 213, 213);
+    color: grey;
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+.send-money .cards .left-card .active-balance {
+    margin-top: 40px;
+}
+
+.send-money .cards .left-card .active-balance .label {
+    color: grey;
+    display: inline-block;
+}
+.send-money .cards .left-card .right-data .label {
+    color: grey;
+}
+.send-money .cards .left-card .right-data .balance {
+    font-size: 1.7rem;
+    margin-top: 10px;
+}
+.send-money .cards .left-card .right-data button {
+    border: unset;
+    outline: unset;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #267dff;
+    color: var(--primary-text);
+    margin-top: 10px;
+}
+
+.send-money .cards .left-card .active-balance span {
+    font-size: 1.1rem;
+    margin-left: 15px;
 }
 
 .send-money .cards .right-card {
@@ -389,10 +429,11 @@ Send Money Cards
     background-color: var(--main-bg-color);
     width: 38%;
     margin-left: 20px;
-    height: 200px;
+    /* height: 200px; */
     border-radius: 15px;
 }
-.send-money .cards .right-card .circle{
+
+.send-money .cards .right-card .circle {
     position: absolute;
     background-color: var(--main-bg-shadow);
     width: 100px;
