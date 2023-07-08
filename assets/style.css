@@ -225,7 +225,7 @@ Recent Transaction
 }
 
 .recent-transaction .cards {
-    height: 300px;
+    height: calc(100vh - 650px);
     overflow-y: scroll;
     margin-top: 20px;
 }
@@ -286,10 +286,71 @@ Find Us
 .find-us{
     margin-top: 40px;
 }
-.find-us .heading{
-    
-}
 .find-us .gmap_canvas{
     margin-top: 20px;
+    border-radius: 15px;
+}
+
+/* 
++++++++++++++++++++++++++++
+Main Content 
++++++++++++++++++++++++++++
+*/
+.main-content{
+    padding: 30px;
+}
+
+
+/* 
++++++++++++++++++++++++++++
+Main Content Top
++++++++++++++++++++++++++++
+*/
+.main-content .top{
+    display: flex;
+    justify-content: space-between;
+}
+.main-content .top{
+    display: flex;
+    justify-content: space-between;
+}
+.main-content .top .searching{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-text);
+    height: 50px;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+.main-content .top .searching .icon{
+    color: var(--grey);
+}
+.main-content .top .searching input{
+    outline: unset;
+    border: unset;
+    width: calc(100% - 120px);
+}
+.main-content .top .searching button{
+    background-color: transparent;
+    border: unset;
+    color: var(--main-bg-shadow);
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #d2e0fa;
+    cursor: pointer;
+}
+.main-content .top .searching button:hover{
+    color: #d2e0fa;
+    background-color: var(--main-bg-color);
+}
+.main-content .top .notification{
+    background-color: var(--primary-text);
+    color: var(--grey);
+    padding: 15px;
+    font-size: 1.4rem;
+    cursor: pointer;
     border-radius: 15px;
 }
